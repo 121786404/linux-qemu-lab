@@ -1,0 +1,14 @@
+.*
+!.gitignore
+*~
+
+/linux*
+/busybox*
+/u-boot*
+/source
+/a9rootfs.ext3
+/.tmp
+/root_nfs/*
+!/root_nfs/share/
+/si
+/*.list
