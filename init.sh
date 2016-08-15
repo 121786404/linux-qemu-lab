@@ -39,3 +39,6 @@ source ./build_busybox.sh >/dev/null 2>&1
 
 
 sudo cp tools/qemu-ifup /etc
+
+mkdir -p $HOME/.cgdb
+cp tools/cgdbrc $HOME/.cgdb/cgdbrc

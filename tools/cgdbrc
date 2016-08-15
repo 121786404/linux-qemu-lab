@@ -1,0 +1,14 @@
+:highlight SelectedLineNr ctermfg=Blue cterm=reverse
+
+
+:set splitorientation=vertical
+:set winsplit=top_big
+:set winminheight=0
+:set wrapscan
+
+
+:set autosourcereload
+:set arrowstyle=long
+:set ignorecase
+:set showtgdbcommands
+:set tabstop=4
