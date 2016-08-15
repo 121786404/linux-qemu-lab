@@ -38,4 +38,4 @@ echo "========begin build busybox========="
 source ./build_busybox.sh >/dev/null 2>&1
 
 
-sudo cp qemu-ifup /etc
+sudo cp tools/qemu-ifup /etc

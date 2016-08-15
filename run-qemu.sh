@@ -97,8 +97,20 @@ QEMU_COMMON_OPT="-M vexpress-a9 -m 512M -smp 4 -kernel linux/arch/arm/boot/zImag
 if $debug ; then
 	sudo qemu-system-arm  $QEMU_SD $QEMU_COMMON_OPT -append "$QEMU_ROOT" $QEMU_GUI_OPT $QEMU_NET_OPT -S -s &
 	sleep 2
-	gnome-terminal -e "arm-linux-gnueabi-gdb -q -tui -x gdbinit"
+	#gnome-terminal -e "arm-linux-gnueabi-gdb -q -tui -x gdbinit"
+	gnome-terminal -e "cgdb -d arm-linux-gnueabi-gdb -x tools/gdbinit"
 else
 	sudo qemu-system-arm  $QEMU_SD $QEMU_COMMON_OPT -append "$QEMU_ROOT" $QEMU_GUI_OPT $QEMU_NET_OPT
 fi
 
+
+#sudo qemu-system-arm -sd a9rootfs.ext3 \
+#-M vexpress-a9 \
+#-m 512M \
+#-smp 4 \
+#-kernel linux/arch/arm/boot/zImage \
+#-dtb linux/arch/arm/boot/dts/vexpress-v2p-ca9.dtb \
+#-append "/dev/nfs nfsroot=10.0.0.1:/home/sheldon.liu/linux-qemu-lab/root_nfs rw ip=10.0.0.2:10.0.0.1:10.0.0.1:255.255.255.0" \
+#-net nic,vlan=0 \
+#-net tap,vlan=0,ifname=tap0,script=qemu-ifup \
+#-S -s

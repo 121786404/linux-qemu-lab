@@ -37,5 +37,5 @@ make dtbs
 
 #arm-linux-gnueabi-objdump -j .head.text -d -Sl vmlinux > head.dis
 arm-linux-gnueabi-objdump -j .head.text -j .init.text -d vmlinux > head.dis
-../tool/collect-src -f "z:/linux-qemu-lab/linux" -o ../kernel.list
+../tools/collect-src -f "z:/linux-qemu-lab/linux" -o ../linux_src.list
 cd ..
