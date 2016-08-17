@@ -4,4 +4,5 @@
 
 #./run-qemu.sh -net -nfs -d -gui
 #./run-qemu.sh -net -nfs
+#./run-qemu.sh
 ./run-qemu.sh -d -gui
