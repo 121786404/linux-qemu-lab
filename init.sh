@@ -2,7 +2,7 @@
 
 SOURCE_DIR="source"
 
-KERNEL_NAME="linux-4.4.16"
+KERNEL_NAME="linux-4.4.18"
 BUSYBOX_NAME="busybox-1.25.0"
 UBOOT_NAME="u-boot-2016.07"
 KERNEL_FILE="$KERNEL_NAME.tar.xz"

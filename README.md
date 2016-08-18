@@ -6,7 +6,7 @@
 
 2. 下载源码(放到source文件夹)
 
-	https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.16.tar.xz
+	https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.18.tar.xz
 
 	http://busybox.net/downloads/busybox-1.25.0.tar.bz2
 
