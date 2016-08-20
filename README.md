@@ -22,6 +22,7 @@
 
 
 	auto lo
+
 	iface lo inet loopback
 
 	auto ens33

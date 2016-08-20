@@ -14,8 +14,8 @@ cd _install
 mkdir proc sys tmp root var mnt dev lib
 
 tar xf ../../root_fs_patch.tar.gz
-sudo cp /usr/arm-linux-gnueabi/lib/*.so* lib -d
-sudo arm-linux-gnueabi-strip lib/*
+sudo cp /opt/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/lib/*.so* lib -d
+arm-linux-gnueabi-strip lib/*
 
 
 sudo mknod dev/tty1 c 4 1
