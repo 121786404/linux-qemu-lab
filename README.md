@@ -1,6 +1,6 @@
 1. 	安装必要的包
 
-	sudo apt-get install qemu-system-arm libncurses5-dev bc ddd
+	sudo apt-get install qemu-system-arm libncurses5-dev bc ddd nfs-kernel-server
 
 	https://releases.linaro.org/components/toolchain/binaries/latest-5/aarch64-linux-gnu/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu.tar.xz
 

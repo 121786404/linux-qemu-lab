@@ -98,8 +98,8 @@ if $debug ; then
 	sudo qemu-system-arm  $QEMU_SD $QEMU_COMMON_OPT -append "$QEMU_ROOT" $QEMU_GUI_OPT $QEMU_NET_OPT -S -s &
 	sleep 2
 	#gnome-terminal -e "arm-linux-gnueabi-gdb -q -tui -x gdbinit"
-	gnome-terminal -e "cgdb -d arm-linux-gnueabi-gdb -x tools/gdbinit"
-	#gnome-terminal -e "ddd --debugger arm-linux-gnueabi-gdb -x tools/gdbinit"
+	#gnome-terminal -e "cgdb -d arm-linux-gnueabi-gdb -x tools/gdbinit"
+	gnome-terminal -e "ddd --debugger arm-linux-gnueabi-gdb -x tools/gdbinit"
 else
 	sudo qemu-system-arm  $QEMU_SD $QEMU_COMMON_OPT -append "$QEMU_ROOT" $QEMU_GUI_OPT $QEMU_NET_OPT
 fi
