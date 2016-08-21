@@ -46,7 +46,7 @@ else
 fi
 
 if $net ; then
-	QEMU_NET_OPT="-net nic,vlan=0 -net tap,vlan=0,ifname=tap0,script=qemu-ifup"
+	QEMU_NET_OPT="-net nic,vlan=0 -net tap,vlan=0,ifname=tap0"
 fi
 
 if $boot_disk ; then
@@ -113,5 +113,5 @@ fi
 #-dtb linux/arch/arm/boot/dts/vexpress-v2p-ca9.dtb \
 #-append "/dev/nfs nfsroot=10.0.0.1:/home/sheldon.liu/linux-qemu-lab/root_nfs rw ip=10.0.0.2:10.0.0.1:10.0.0.1:255.255.255.0" \
 #-net nic,vlan=0 \
-#-net tap,vlan=0,ifname=tap0,script=qemu-ifup \
+#-net tap,vlan=0,ifname=tap0 \
 #-S -s
