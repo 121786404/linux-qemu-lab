@@ -3,7 +3,7 @@
 
 #./run-qemu.sh -gui
 #./run-qemu.sh -net -gui
-./run-qemu.sh -net -nfs -gui
+./run-qemu.sh -net -nfs
 #./run-qemu.sh -net -nfs -d -gui
 #./run-qemu.sh -net -nfs
 #./run-qemu.sh -net -gui

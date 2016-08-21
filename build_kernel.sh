@@ -5,7 +5,7 @@ cd linux
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabi-
 #export INSTALL_MOD_PATH=images
-cp ../my_vexpress_config .config
+cp ../tools/my_vexpress_config .config
 
 #make vexpress_defconfig
 #sed -i 's/.*CONFIG_DEBUG_KERNEL.*/CONFIG_DEBUG_KERNEL=y/' .config
