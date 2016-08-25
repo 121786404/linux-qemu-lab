@@ -1,8 +1,8 @@
 1. 	安装必要的包
 
-	sudo apt-get install qemu-system-arm libncurses5-dev bc ddd nfs-kernel-server
+	sudo apt-get install qemu-system-arm libncurses5-dev bc ddd nfs-kernel-server u-boot-tools
 
-	https://releases.linaro.org/components/toolchain/binaries/4.9-2016.02/arm-linux-gnueabi/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabi.tar.xz
+	http://releases.linaro.org/components/toolchain/binaries/5.3-2016.02/arm-linux-gnueabi/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabi.tar.xz
 
 2. 下载源码(放到source文件夹)
 
