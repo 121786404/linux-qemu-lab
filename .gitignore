@@ -6,6 +6,7 @@
 /busybox*
 /u-boot*
 /source
+!/source/.gitkeep
 /a9rootfs.ext2
 /.tmp
 /root_nfs/*
