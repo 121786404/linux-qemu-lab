@@ -42,4 +42,4 @@ sudo cp tools/qemu-ifup /etc
 
 mkdir -p $HOME/.cgdb
 cp tools/cgdbrc $HOME/.cgdb/cgdbrc
-cp tools/tftpd-hpa.cfg /etc/default/tftpd-hpa
+sudo cp tools/tftpd-hpa.cfg /etc/default/tftpd-hpa

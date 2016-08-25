@@ -6,9 +6,11 @@
 /busybox*
 /u-boot*
 /source
-/a9rootfs.ext3
+/a9rootfs.ext2
 /.tmp
 /root_nfs/*
 !/root_nfs/share/
 /si
 /*.list
+/boot.cmd
+/tmpfs

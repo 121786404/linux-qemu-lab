@@ -32,6 +32,7 @@ cp ../tools/my_vexpress_config .config
 #sed -i 's/.*CONFIG_KDB_KEYBOARD.*/CONFIG_KDB_KEYBOARD=y/' .config
 
 make zImage -j4
+make  LOADADDR=0x60003000 uImage
 #make zImage -j4 V=1 > build_image.log
 make modules
 #make modules_install
