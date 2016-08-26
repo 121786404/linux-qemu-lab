@@ -17,10 +17,12 @@ rm -rf linux u-boot busybox
 rm -rf $KERNEL_NAME $BUSYBOX_NAME $UBOOT_NAME
 
 tar xf "$SOURCE_DIR/$KERNEL_FILE"
-tar xf "$SOURCE_DIR/$BUSYBOX_FILE"
-tar xf "$SOURCE_DIR/$UBOOT_FILE"
 mv $KERNEL_NAME linux
+
+tar xf "$SOURCE_DIR/$BUSYBOX_FILE"
 mv $BUSYBOX_NAME busybox
+
+tar xf "$SOURCE_DIR/$UBOOT_FILE"
 mv $UBOOT_NAME u-boot
 
 
