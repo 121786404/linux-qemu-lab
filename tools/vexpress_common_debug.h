@@ -283,7 +283,6 @@
 #define CONFIG_SYS_MAXARGS		16	/* max command args */
 
 
-
 #undef CONFIG_IPADDR
 #undef CONFIG_SERVERIP
 #undef CONFIG_BOOTARGS
@@ -293,7 +292,7 @@
 #define CONFIG_SERVERIP		10.0.0.1
 
 #if 1
-#define CONFIG_BOOTARGS	    "init=/linuxrc console=ttyAMA0 root=/dev/mmcblk0 rw rootwait"
+#define CONFIG_BOOTARGS	    "init=/linuxrc root=/dev/mmcblk0 rw rootwait"
 #else
 #define CONFIG_BOOTARGS	    "/dev/nfs console=ttyAMA0 nfsroot=10.0.0.1:/home/sheldon.liu/linux-qemu-lab/root_nfs rw ip=10.0.0.2:10.0.0.1:10.0.0.1:255.255.255.0 "
 #endif

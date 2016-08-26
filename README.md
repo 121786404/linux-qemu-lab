@@ -39,22 +39,16 @@
 
 
 
+
 	修改 /etc/exports 添加
  	/home *(rw,sync,no_root_squash,no_subtree_check)
 
 4. 	运行init.sh,解压编译源代码
 
-	运行run.sh            nfs启动
+	运行run.sh
 
-	运行run-disk.sh       SD卡启动
+	运行run-debug.sh
 
-	运行run-disk-net.sh   SD卡启动，开启qemu网络支持
-
-	//运行run_boot          进入uboot
-
-
-5. 	TODO
-	目前还没有实现uboot烧写和引导kernel
 
 
 
