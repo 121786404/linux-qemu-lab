@@ -6,7 +6,6 @@
 /busybox*
 /u-boot*
 /a9rootfs.ext2
-/.tmp
 /root_nfs/*
 !/root_nfs/share/
 /si
