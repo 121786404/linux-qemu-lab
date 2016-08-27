@@ -2,9 +2,7 @@
 !.gitignore
 *~
 
-/linux*
-/busybox*
-/u-boot*
+
 /a9rootfs.ext2
 /root_nfs/*
 !/root_nfs/share/
