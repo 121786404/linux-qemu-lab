@@ -12,3 +12,5 @@
 /*.list
 /boot.cmd
 /tmpfs
+/image/*
+!/image/keep.txt

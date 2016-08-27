@@ -6,7 +6,7 @@
 #
 sudo rm -f a9rootfs.ext2
 dd if=/dev/zero of=a9rootfs.ext2 bs=1M count=32
-mkfs.ext2 a9rootfs.ext2
+sudo mkfs.ext2 a9rootfs.ext2
 sudo rm -rf tmpfs
 mkdir -p tmpfs
 sudo mount -t ext2 a9rootfs.ext2 tmpfs -o loop
