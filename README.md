@@ -1,3 +1,5 @@
+git clone --recursive https://github.com/121786404/linux-qemu-lab
+
 1. 	安装必要的包
 
 	sudo apt-get install -y qemu-system-arm libncurses5-dev bc ddd nfs-kernel-server tftpd-hpa u-boot-tools
