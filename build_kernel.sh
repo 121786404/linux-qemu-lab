@@ -6,30 +6,15 @@ export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabi-
 #export INSTALL_MOD_PATH=images
 #cp ../tools/my_vexpress_config .config
-
+#
+git checkout arch/arm/configs/vexpress_defconfig
 make vexpress_defconfig
-#sed -i 's/.*CONFIG_DEBUG_KERNEL.*/CONFIG_DEBUG_KERNEL=y/' .config
-#sed -i "s/.*CONFIG_EARLY_PRINTK.*/CONFIG_EARLY_PRINTK=y/" .config
-##sed -i 's/.*CONFIG_DEBUG_INFO.*/CONFIG_DEBUG_INFO=y/' .config
-#sed -i "s/.*CONFIG_READABLE_ASM.*/CONFIG_READABLE_ASM=y/" .config
-##sed -i "s/.*CONFIG_DEBUG_LL .*/CONFIG_DEBUG_LL=y/" .config
-#sed -i 's/.*CONFIG_DEBUG_RODATA.*/CONFIG_DEBUG_RODATA=n/' .config
-#sed -i 's/.*CONFIG_FRAME_POINTER.*/CONFIG_FRAME_POINTER=y/' .config
-##sed -i 's/.*CONFIG_KALLSYMS.*/CONFIG_KALLSYMS=y/' .config
-#sed -i 's/.*CONFIG_KALLSYMS_ALL.*/CONFIG_KALLSYMS_ALL=y/' .config
-#sed -i 's/.*CONFIG_DEBUG_SET_MODULE_RONX.*/CONFIG_DEBUG_SET_MODULE_RONX=n/' .config
-##sed -i 's/.*CONFIG_MAGIC_SYSRQ.*/CONFIG_MAGIC_SYSRQ=y/' .config
-#sed -i "s/.*CONFIG_DEBUG_VEXPRESS_UART0_CA9.*/CONFIG_DEBUG_VEXPRESS_UART0_CA9=y/" .config
-#
-#
-#
-#sed -i 's/.*CONFIG_KGDB.*/CONFIG_KGDB=y/' .config
-#sed -i 's/.*CONFIG_KGDB_SERIAL_CONSOLE.*/CONFIG_KGDB_SERIAL_CONSOLE=y/' .config
-#sed -i 's/.*CONFIG_CONSOLE_POLL.*/CONFIG_CONSOLE_POLL=y/' .config
-#sed -i 's/.*CONFIG_MAGIC_SYSRQ.*/CONFIG_MAGIC_SYSRQ=y/' .config
-#
-#sed -i 's/.*CONFIG_KGDB_KDB.*/CONFIG_KGDB_KDB=y/' .config
-#sed -i 's/.*CONFIG_KDB_KEYBOARD.*/CONFIG_KDB_KEYBOARD=y/' .config
+cp arch/arm/configs/vexpress_defconfig ../tools
+cp .config ../tools/vexpress_config
+
+cp ../tools/my_vexpress_defconfig arch/arm/configs
+make my_vexpress_defconfig
+cp .config ../tools/my_vexpress_config
 
 make zImage -j4
 make  LOADADDR=0x60003000 uImage
