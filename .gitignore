@@ -12,3 +12,6 @@
 /tmpfs
 /image/*
 !/image/keep.txt
+/u-boot
+/linux
+/busybox
