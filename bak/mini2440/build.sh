@@ -1,0 +1,1 @@
+./configure --target-list=arm-softmmu --disable-vnc-tls
