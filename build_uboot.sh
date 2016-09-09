@@ -1,10 +1,11 @@
 #!/bin/bash
 
 cd u-boot
+git checkout master -f
+git pull
+
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabi-
-
-
 
 git checkout include/configs/vexpress_common.h
 sed -i '/\#endif \/\* VEXPRESS_COMMON_H \*\// i \

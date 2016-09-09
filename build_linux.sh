@@ -2,6 +2,8 @@
 
 
 cd linux
+git checkout master -f
+git pull
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabi-
 #export INSTALL_MOD_PATH=images

@@ -1,6 +1,8 @@
 #!/bin/bash
 
 cd busybox
+git checkout master -f
+git pull
 
 sudo make distclean
 
