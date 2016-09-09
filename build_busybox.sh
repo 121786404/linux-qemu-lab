@@ -17,7 +17,7 @@ cd _install
 mkdir proc sys tmp root var mnt dev lib
 
 cp ../../tools/root_fs_patch/* . -rd
-cp /opt/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/lib/*.so* lib -d
+cp /opt/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/lib/*.so* lib -d
 
 arm-linux-gnueabi-strip lib/*
 
