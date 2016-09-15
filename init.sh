@@ -6,6 +6,7 @@ echo "========begin build u-boot========="
 
 source ./build_uboot.sh >/dev/null 2>&1
 
+
 echo "========begin build kernel========="
 
 source ./build_linux.sh >/dev/null 2>&1
