@@ -7,4 +7,5 @@ make distclean
 cp ../tools/my_i386_defconfig arch/x86/configs
 make my_i386_defconfig
 make -j4
+../tools/collect-src -f "linux" -o ../linux_src.list
 cd ..
