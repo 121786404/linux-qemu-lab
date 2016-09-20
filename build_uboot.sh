@@ -2,7 +2,7 @@
 
 cd u-boot
 git checkout master -f
-git pull
+git clean -d -fx
 
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabi-
@@ -19,9 +19,9 @@ sed -i '/\#endif \/\* VEXPRESS_COMMON_H \*\// i \
 make vexpress_ca9x4_defconfig
 make
 cp u-boot ../image/u-boot
-../tools/collect-src -f "u-boot" -o ../boot_src.list
+../tools/collect-src -f "u-boot" -o ../u-boot_src.list
 
-
+git clean -d -fx
 git checkout include/configs/vexpress_common.h
 sed -i '/\#endif \/\* VEXPRESS_COMMON_H \*\// i \
 #undef CONFIG_BOOTCOMMAND \

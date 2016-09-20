@@ -2,7 +2,7 @@
 
 cd busybox
 git checkout master -f
-git pull
+git clean -d -fx
 
 sudo make distclean
 
