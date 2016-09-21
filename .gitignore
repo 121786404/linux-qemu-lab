@@ -12,9 +12,6 @@
 /tmpfs
 /image/*
 !/image/keep.txt
-/u-boot
-/linux
-/busybox
 /tools/my_vexpress_config
 /tools/vexpress_config
 /tools/vexpress_defconfig
