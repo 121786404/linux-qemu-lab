@@ -1,9 +1,13 @@
 #!/bin/bash
 
 
-rm -rf busybox
-rm -rf linux
-rm -rf u-boot
-rm -rf tmpfs
-rm -f a9rootfs.ext3
-rm -f *.list
+git clean -dfx
+cd linux
+git clean -dfx
+cd ..
+cd u-boot
+git clean -dfx
+cd ..
+cd busybox
+git clean -dfx
+cd ..
