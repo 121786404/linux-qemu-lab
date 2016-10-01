@@ -2,11 +2,11 @@
 
 
 cd linux
-git checkout master -f
-git clean -d -fx
-
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabi-
+
+make distclean
+
 #export INSTALL_MOD_PATH=images
 #cp ../tools/my_vexpress_config .config
 #
