@@ -16,7 +16,7 @@ echo "========begin build busybox========="
 
 source ./build_busybox.sh >/dev/null 2>&1
 
-
+pwd
 sudo cp tools/tftpd-hpa.cfg /etc/default/tftpd-hpa
 
 
