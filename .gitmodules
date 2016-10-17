@@ -7,3 +7,6 @@
 [submodule "busybox"]
 	path = busybox
 	url = https://github.com/mirror/busybox
+[submodule "linux_note"]
+	path = linux_note
+	url = https://github.com/121786404/linux_note
