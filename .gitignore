@@ -11,6 +11,7 @@
 /boot.cmd
 /tmpfs
 /image/*
+/*.log
 !/image/keep.txt
 /tools/my_vexpress_config
 /tools/vexpress_config

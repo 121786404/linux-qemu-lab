@@ -14,4 +14,4 @@ sudo qemu-system-arm \
 -m 512M \
 -kernel image/u-boot \
 -net nic,vlan=0 \
--net tap,vlan=0,ifname=tap0,script=./tools/qemu-ifup,downscript=./tools/qemu-ifdown
+-net tap,vlan=0,ifname=tap0,script=./tools/qemu-ifup,downscript=./tools/qemu-ifdown |tee linux.log
