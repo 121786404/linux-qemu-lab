@@ -4,7 +4,7 @@
 rm -f serial.out
 source tools/kill_qemu.sh
 
-qemu-system-i386 -M pc \
+qemu-system-x86_64 -M pc \
 --no-reboot \
 -kernel linux/arch/x86/boot/bzImage \
 -drive file=tools/x86rootfs.ext2,if=virtio,format=raw \
