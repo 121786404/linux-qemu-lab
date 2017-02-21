@@ -1,2 +1,4 @@
 linux/arch/arm/kernel/vmlinux.lds.S
 linux/arch/arm/kernel/vmlinux.lds
+linux/arch/arm/configs/my_vexpress_defconfig
+linux/include/generated/autoconf.h
