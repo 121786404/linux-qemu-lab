@@ -1,3 +1,6 @@
 [submodule "linux"]
 	path = linux
 	url = https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+[submodule "linux_note"]
+	path = linux_note
+	url = https://github.com/121786404/linux_note
