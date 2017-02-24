@@ -4,17 +4,17 @@
 
 echo "========begin build u-boot========="
 
-source ./build_uboot.sh >/dev/null 2>&1
+source ./build_uboot.sh
 
 
 echo "========begin build kernel========="
 
-source ./build_linux.sh >/dev/null 2>&1
+source ./build_linux.sh
 
 
 echo "========begin build busybox========="
 
-source ./build_busybox.sh >/dev/null 2>&1
+source ./build_busybox.sh
 
 pwd
 sudo cp tools/tftpd-hpa.cfg /etc/default/tftpd-hpa
