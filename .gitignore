@@ -8,6 +8,7 @@
 !/root_nfs/share/
 /si
 /*.list
+!/linux_src_arch_x86.list
 /boot.cmd
 /tmpfs
 /image/*
