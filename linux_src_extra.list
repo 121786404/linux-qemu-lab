@@ -1,3 +1,4 @@
+linux/arch/arm/boot/dts/vexpress-v2p-ca15_a7.dts
 linux/arch/arm/kernel/vmlinux.lds.S
 linux/arch/arm/kernel/vmlinux.lds
 linux/arch/arm/configs/my_vexpress_defconfig
