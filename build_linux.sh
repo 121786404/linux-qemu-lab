@@ -27,7 +27,8 @@ make modules
 make dtbs
 cp arch/arm/boot/uImage ../image
 cp arch/arm/boot/zImage ../image
-cp arch/arm/boot/dts/vexpress-v2p-ca9.dtb ../image
+cp arch/arm/boot/dts/*.dtb ../image
+
 #arm-linux-gnueabi-objdump -j .head.text -d -Sl vmlinux > head.dis
 arm-linux-gnueabi-objdump -j .head.text -j .init.text -d vmlinux > head.dis
 ../tools/collect-src -f "linux" -o ../linux_src.list
