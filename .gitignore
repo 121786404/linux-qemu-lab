@@ -8,8 +8,6 @@
 !/root_nfs/share/
 /si
 /*.list
-!/linux_src_arch_x86.list
-!/linux_src_mini2440.list
 /boot.cmd
 /tmpfs
 /image/*

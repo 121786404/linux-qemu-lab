@@ -34,5 +34,5 @@ make
 cp u-boot ../image/u-boot-d
 
 
-../tools/collect-src -f "u-boot" -o ../u-boot_src.list
+#../tools/collect-src -f "u-boot" -o ../u-boot_src.list
 cd ..
