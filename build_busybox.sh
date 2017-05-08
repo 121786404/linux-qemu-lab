@@ -7,7 +7,7 @@ sudo make distclean
 make defconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 sed -i "s/.*CONFIG_STATIC.*/CONFIG_STATIC=y/" .config
 make install ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
-#../tools/collect-src -f "busybox" -o ../busybox_src.list
+../tools/collect-src -f "busybox" -o ../busybox_src.list
 
 cd _install
 
