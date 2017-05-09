@@ -5,7 +5,6 @@
 
 /a9rootfs.ext2
 /root_nfs/*
-!/root_nfs/share/
 /si
 /*.list
 /boot.cmd
