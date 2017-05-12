@@ -1,0 +1,8 @@
+.*
+!.gitignore
+*~
+
+
+my_vexpress_config
+vexpress_config
+vexpress_defconfig

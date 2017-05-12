@@ -4,15 +4,9 @@
 
 
 /a9rootfs.ext2
-/root_nfs/*
 /si
 /*.list
 /boot.cmd
 /tmpfs
-/image/*
 /*.log
-!/image/keep.txt
-/tools/my_vexpress_config
-/tools/vexpress_config
-/tools/vexpress_defconfig
-rootfs_qtopia_qt4
+/rootfs_qtopia_qt4

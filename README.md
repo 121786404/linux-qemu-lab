@@ -15,3 +15,12 @@
 	运行:run.sh
 	调试:run-debug.sh 使用ddd
 	调试:run-debug.sh 使用eclipse
+	
+	
+3 eclipse 设置
+
+window preferences Gereral Workspace  Build automatically 去掉
+									 C/C++   Indexer    Enable indexer 去掉
+									 
+Main
+	Disbale auto build						
