@@ -7,7 +7,7 @@ source tools/restart-net-servers.sh
 sudo qemu-system-arm \
 -sd a9rootfs.ext2 \
 -M vexpress-a9 \
--m 512M \
+-m 64M \
 -kernel image/zImage \
 -dtb image/vexpress-v2p-ca9.dtb \
 -append "init=/linuxrc root=/dev/mmcblk0 rw rootwait" \
