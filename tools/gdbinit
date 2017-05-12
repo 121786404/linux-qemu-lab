@@ -1,5 +1,3 @@
-dir linux
-file linux/vmlinux
-target remote :1234
+dir ~/linux-qemu-lab-arm/linux
+file ~/linux-qemu-lab-arm/linux/vmlinux
 b start_kernel
-c
