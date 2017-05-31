@@ -11,7 +11,6 @@ sudo rm -rf tmpfs
 mkdir -p tmpfs
 sudo mount -t ext2 a9rootfs.ext2 tmpfs -o loop
 sudo cp -raf busybox/_install/*  tmpfs
-cp tools/root_fs_patch/* tmpfs -rd
-sudo cp -r root_nfs/share tmpfs
+sudo cp tools/root_fs_patch/* tmpfs -rd
 sudo umount tmpfs
 sudo rm -rf tmpfs

@@ -20,6 +20,5 @@ ifconfig lo 127.0.0.1
 /bin/hostname -F /etc/sysconfig/HOSTNAME
 
 ifconfig eth0 10.0.0.2
-#mkdir -p share
-#mount -t nfs -o nolock 10.0.0.1:/home/sheldon.liu/linux-qemu-lab-arm/root_nfs/share   /share
-#cd /share
+mkdir -p share
+mount -t nfs -o nolock 10.0.0.1:/home/sheldon.liu/linux-qemu-lab-arm/root_nfs/share   /share
