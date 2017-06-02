@@ -6,6 +6,15 @@ sudo make distclean
 
 make defconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 sed -i "s/.*CONFIG_STATIC.*/CONFIG_STATIC=y/" .config
+
+
+#make allyesconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+#sed -i "s/.*CONFIG_STATIC.*/CONFIG_STATIC=y/" .config
+#sed -i "s/.*CONFIG_SELINUX.*/# CONFIG_SELINUX is not set/" .config
+#sed -i "s/.*CONFIG_PAM.*/# CONFIG_PAM is not set/" .config
+#sed -i "s/.*CONFIG_FEATURE_SH_STANDALONE.*/# CONFIG_FEATURE_SH_STANDALONE is not set/" .config
+
+
 make install ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 ../tools/collect-src -f "busybox" -o ../busybox_src.list
 
