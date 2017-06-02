@@ -13,3 +13,4 @@ linux\arch\arm\configs\my_vexpress_defconfig
 linux\include\generated\autoconf.h
 linux\drivers\hid\usbhid\usbmouse.c
 linux\drivers\hid\usbhid\usbkbd.c
+linux\drivers\media\i2c\ov9650.c
