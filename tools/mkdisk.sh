@@ -12,5 +12,7 @@ mkdir -p tmpfs
 sudo mount -t ext2 a9rootfs.ext2 tmpfs -o loop
 sudo cp -raf busybox/_install/*  tmpfs
 sudo cp tools/root_fs_patch/* tmpfs -rd
+mkdir -p system/modules
+find linux/.modules/lib/modules/*/kernel -name *.ko | xargs -i cp {} tmpfs/system/modules
 sudo umount tmpfs
 sudo rm -rf tmpfs

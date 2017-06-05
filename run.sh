@@ -21,3 +21,8 @@ sudo qemu-system-arm \
 
 
 #-usbdevice host:1b3b:2977
+#-usb \
+#-usbdevice mouse \
+#-usbdevice keyboard \
+#-usbdevice tablet \
+#-show-cursor \

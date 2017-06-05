@@ -19,11 +19,11 @@ cp ../tools/my_vexpress_defconfig arch/arm/configs
 make my_vexpress_defconfig
 cp .config ../tools/my_vexpress_config
 
-make zImage -j4
+make -j4 zImage modules
 make  LOADADDR=0x60003000 uImage
 #make zImage -j4 V=1 > build_image.log
-make modules
-#make modules_install
+mkdir -p .modules
+make modules_install INSTALL_MOD_PATH=.modules
 make dtbs
 cp arch/arm/boot/uImage ../image
 cp arch/arm/boot/zImage ../image
