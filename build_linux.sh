@@ -25,11 +25,11 @@ make  LOADADDR=0x60003000 uImage
 mkdir -p .modules
 make modules_install INSTALL_MOD_PATH=.modules
 make dtbs
-cp arch/arm/boot/uImage ../image
-cp arch/arm/boot/zImage ../image
-cp arch/arm/boot/dts/*.dtb ../image
+#cp arch/arm/boot/uImage ../image
+#cp arch/arm/boot/zImage ../image
+#cp arch/arm/boot/dts/*.dtb ../image
 
 #arm-linux-gnueabi-objdump -j .head.text -d -Sl vmlinux > head.dis
-arm-linux-gnueabi-objdump -j .head.text -j .init.text -d vmlinux > head.dis
-../tools/collect-src -f "linux" -o ../linux_src.list
+#arm-linux-gnueabi-objdump -j .head.text -j .init.text -d vmlinux > head.dis
+#../tools/collect-src -f "linux" -o ../linux_src.list
 cd ..

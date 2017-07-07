@@ -12,6 +12,6 @@ sudo qemu-system-arm \
 -sd a9rootfs.ext2 \
 -M vexpress-a9 \
 -m 64M \
--kernel image/u-boot \
+-kernel u-boot/u-boot \
 -net nic,vlan=0 \
 -net tap,vlan=0,ifname=tap0,script=./tools/qemu-ifup,downscript=./tools/qemu-ifdown |tee linux.log
