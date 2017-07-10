@@ -10,6 +10,3 @@
 [submodule "linux_note"]
 	path = linux_note
 	url = https://github.com/121786404/linux_note
-[submodule "linux_module"]
-	path = linux_module
-	url = https://github.com/121786404/linux_module
