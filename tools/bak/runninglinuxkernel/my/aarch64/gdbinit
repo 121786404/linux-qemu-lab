@@ -1,0 +1,3 @@
+dir ~/runninglinuxkernel_4.0_64
+file ~/runninglinuxkernel_4.0_64/vmlinux
+b paging_init

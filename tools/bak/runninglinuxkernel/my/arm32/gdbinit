@@ -1,0 +1,3 @@
+dir ~/runninglinuxkernel_4.0
+file ~/runninglinuxkernel_4.0/vmlinux
+b devicemaps_init
