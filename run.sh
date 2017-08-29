@@ -1,10 +1,8 @@
 #!/bin/bash
 
-
 source tools/kill_qemu.sh
 source tools/mkdisk.sh
 source tools/restart-net-servers.sh
-
 
 sudo qemu-system-arm \
 -smp 2 \
