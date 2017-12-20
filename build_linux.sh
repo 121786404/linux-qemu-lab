@@ -32,4 +32,5 @@ make dtbs
 #arm-linux-gnueabi-objdump -j .head.text -d -Sl vmlinux > head.dis
 #arm-linux-gnueabi-objdump -j .head.text -j .init.text -d vmlinux > head.dis
 #../tools/collect-src -f "linux" -o ../linux_src.list
+#python ../tools/extract-symvers.py --base-address 0x60003000 -e le --bits 32 linux/arch/arm/boot/zImage
 cd ..
