@@ -9,7 +9,7 @@ sudo qemu-system-arm \
 -nographic \
 -sd a9rootfs.ext2 \
 -M vexpress-a9 \
--m 64M \
+-m 1024M \
 -kernel linux/arch/arm/boot/zImage \
 -dtb linux/arch/arm/boot/dts/vexpress-v2p-ca9.dtb \
 -append "init=/linuxrc user_debug=0xff earlyprintk memblock=debug console=ttyAMA0,115200 root=/dev/mmcblk0 rw rootwait" \
