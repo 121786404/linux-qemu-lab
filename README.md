@@ -5,7 +5,7 @@
 1. 	安装必要的包
 
 	sudo apt-get install -y qemu-system-arm libncurses5-dev bc nfs-kernel-server tftpd-hpa u-boot-tools uml-utilities bridge-utils
-	sudo apt-get install ddd eclipse-cdt dos2unix enconv
+	sudo apt-get install ddd eclipse-cdt dos2unix enca
 	
 2. 安装编译器
 
